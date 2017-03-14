@@ -105,8 +105,8 @@ class Itpy(object):
     def partition(iterable, predicate):
         return Itpy(itpy=iterable)
 
-    @iter_wraps(transforms.permutations)
-    def permutations(iterable):
+    @iter_wraps(transforms.permutate)
+    def permutate(iterable):
         return Itpy(itpy=iterable)
 
     @iter_wraps(transforms.intersect)
