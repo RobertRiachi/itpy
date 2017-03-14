@@ -28,6 +28,14 @@ from itpy import Itpy
 lst = Itpy([1,2,3]).map(lambda x: x**2)._
 # [1,4,9]
 ```
+
+##### Apply a permutation on an iterable!
+```python
+lst = Itpy(['a','b','c']).permutate()._
+# [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), 
+# ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
+```
+
 ##### Apply a groupby on tuples!
 ```python
 # note that without a keyf, valuef, we implicitly assume they are tuples.
