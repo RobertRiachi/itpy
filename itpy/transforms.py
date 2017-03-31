@@ -260,13 +260,8 @@ def partition(iterable, predicate):
 
 # TODO
 def permutate(iterable):
-    arr = []
-    #p = []
-    for x in iterable:
-        arr.append(x)
-        #p.append(list(it.permutations(arr, len(arr))))
 
-    return list(it.permutations(arr, len(arr)))
+    return it.permutations(iterable, len(iterable))
 
 
 # TODO
@@ -429,5 +424,3 @@ def union(iterable, *iterables):
     :param iterables:
     """
     return iter(it.chain(iterable, *iterables))
-
-print(permutate(['a','b', 'c']))
